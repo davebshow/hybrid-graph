@@ -3,7 +3,7 @@ import networkx as nx
 from networkx.generators.random_graphs import _random_subset
 
 
-def simple_hybrid_graph(t, m=2, alpha=0.5):
+def hybrid_graph(t, m=2, alpha=0.5):
     """Generates a random graph that uses a mixed model for growth. 
        For each unit of time t, a new node links to the graph with 
        m * alpha links assigned randomly to existing nodes, and 
